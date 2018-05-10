@@ -48,7 +48,7 @@ Finally you must choose as a command what Nutanix CLI tool you want to use. Curr
 
 ### nCLI
 ```bash
-$ docker run -it --rm -e NTNX_IP=192.168.1.1 -e NTNX_USERNAME=admin -e NTNX_PASSWORD=nutanix/4u docker-nutanix-cli-tools:latest ncli
+$ docker run -it --rm -e NTNX_IP=192.168.1.1 -e NTNX_USERNAME=admin -e NTNX_PASSWORD=admin docker-nutanix-cli-tools:latest ncli
 
 
 Welcome, admin
@@ -57,14 +57,14 @@ You're now connected to 00000afa-0b00-0a0e-000c-0000000000a0 (JoseGomez.io) at 1
 
 ### aCLI
 ```bash
-$ docker run -it --rm -e NTNX_IP=192.168.1.1 -e NTNX_USERNAME=admin -e NTNX_PASSWORD=nutanix/4u docker-nutanix-cli-tools:latest acli
+$ docker run -it --rm -e NTNX_IP=192.168.1.1 -e NTNX_USERNAME=admin -e NTNX_PASSWORD=admin docker-nutanix-cli-tools:latest acli
 
 <acropolis>
 ```
 
 ### NuCLEI
 ```bash
-$ docker run -it --rm -e NTNX_IP=192.168.1.1 -e NTNX_USERNAME=admin -e NTNX_PASSWORD=nutanix/4u docker-nutanix-cli-tools:latest nuclei
+$ docker run -it --rm -e NTNX_IP=192.168.1.1 -e NTNX_USERNAME=admin -e NTNX_PASSWORD=admin docker-nutanix-cli-tools:latest nuclei
 
 <nuclei>
 ```
@@ -84,7 +84,7 @@ $ cd credentials
 $ cat <<EOF> cluster1
 NTNX_IP=192.168.1.1
 NTNX_USERNAME=admin
-NTNX_PASSWORD=nutanix/4u
+NTNX_PASSWORD=admin
 EOF
 $ chmod 600 cluster1
 ```
